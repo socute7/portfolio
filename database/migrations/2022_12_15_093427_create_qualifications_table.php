@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('qualifications', function (Blueprint $table) {
             $table->id();
-            $table->enum('type',['Education','Work']);
+            $table->enum('type',['Education','Work','Intern']);
             $table->string('title');
             $table->string('association');
             $table->string('description');

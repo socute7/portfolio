@@ -47,7 +47,7 @@ class AboutmeController extends Controller
         if($user->profile_pic != null){
             Storage::delete($user->profile_pic);
         }
-        $get_new_file = $request->file('image')->store('images');
+        $get_new_file = $request->file('image')->store('images', 'public');
         $user->profile_pic = $get_new_file;
     }
 

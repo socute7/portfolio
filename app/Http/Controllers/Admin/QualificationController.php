@@ -21,7 +21,7 @@ class QualificationController extends Controller
 
     public function showExperience()
     {
-        $experiences = Qualification::where('type',['Work'])->orderBy('id')->get();
+        $experiences = Qualification::where('type',['Work','Intern'])->orderBy('id')->get();
         return view('admin.qualification.exp', compact('experiences'));
     }
 
@@ -106,10 +106,10 @@ class QualificationController extends Controller
                 // dd($validated);
 
         $qualification->update($validated);
-        if($request['type']== 'Education'){
-            return to_route('admin.qualification.edu')->with('message','Education Updated');
-        }else{
-            return to_route('admin.qualification.exp')->with('message','Experience Updated');
+        if ($request['type'] == 'Education') {
+            return to_route('admin.qualification.edu')->with('message', 'Education Updated');
+        } else { 
+            return to_route('admin.qualification.exp')->with('message', 'Experience Updated');
         }
     }
 

@@ -32,7 +32,7 @@
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Free</span>Folio</h1>
+            <h1 class="m-0 display-5"><span class="text-danger">Porto</span>Folio</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -43,34 +43,32 @@
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#qualification" class="nav-item nav-link">Quality</a>
                 <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                <a href="#testimonial" class="nav-item nav-link">Review</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <a href="" class="btn btn-outline-danger d-none d-lg-block">Hire Me</a>
         </div>
     </nav>
     <!-- Navbar End -->
 
     @yield('content')
 
-       <!-- JavaScript Libraries -->
-       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-       <script src="{{ asset('import/assets/lib/typed/typed.min.js') }}"></script>
-       <script src="{{ asset('import/assets/lib/easing/easing.min.js') }}"></script>
-       <script src="{{ asset('import/assets/lib/waypoints/waypoints.min.js') }}"></script>
-       <script src="{{ asset('import/assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-       <script src="{{ asset('import/assets/lib/isotope/isotope.pkgd.min.js') }}"></script>
-       <script src="{{ asset('import/assets/lib/lightbox/js/lightbox.min.js') }}"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('import/assets/lib/typed/typed.min.js') }}"></script>
+    <script src="{{ asset('import/assets/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('import/assets/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('import/assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('import/assets/lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('import/assets/lib/lightbox/js/lightbox.min.js') }}"></script>
 
-       <!-- Contact Javascript File -->
-       <script src="{{ asset('mail/jqBootstrapValidation.min.js') }}"></script>
-       <script src="{{ asset('import/assets/mail/contact.js') }}"></script>
+    <!-- Contact Javascript File -->
+    <script src="{{ asset('mail/jqBootstrapValidation.min.js') }}"></script>
+    <script src="{{ asset('import/assets/mail/contact.js') }}"></script>
 
-       <!-- Template Javascript -->
-       <script src="{{ asset('import/assets/js/main.js') }}"></script>
-   </body>
+    <!-- Template Javascript -->
+    <script src="{{ asset('import/assets/js/main.js') }}"></script>
+</body>
 
-   </html>
+</html>
